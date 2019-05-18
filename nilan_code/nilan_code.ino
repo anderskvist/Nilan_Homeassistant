@@ -3,6 +3,7 @@
 #include <ArduinoOTA.h>
 #include <ModbusMaster.h>
 #include <PubSubClient.h>
+#include <RemoteDebug.h>
 #include "configuration.h"
 
 #define HOST "NilanGW-%s" // Change this to whatever you like. 
@@ -25,6 +26,7 @@ PubSubClient mqttclient(client);
 static long lastMsg = -SENDINTERVAL;
 static int16_t rsbuffer[MAXREGSIZE];
 ModbusMaster node;
+RemoteDebug Debug;
 
 String req[4]; //operation, group, address, value
 enum reqtypes
@@ -184,6 +186,10 @@ void setup()
     delay(5000);
     ESP.restart();
   }
+
+  // Initialize remote debugging
+  Debug.begin(host);
+
   ArduinoOTA.onStart([]() {
   });
   ArduinoOTA.onEnd([]() {
