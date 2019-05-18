@@ -295,6 +295,8 @@ void writeResponse(WiFiClient &client, JsonObject &json)
 
 char ReadModbus(uint16_t addr, uint8_t sizer, int16_t *vals, int type)
 {
+  Debug.printf("ReadModbus: %d\n", type);
+
   char result = 0;
   switch (type)
   {
@@ -345,11 +347,7 @@ void mqttreconnect()
 
 void loop()
 {
-#ifdef DEBUG_TELNET
-  // handle Telnet connection for debugging
-  handleTelnet();
-#endif
-
+  Debug.handle();
   ArduinoOTA.handle();
   WiFiClient client = server.available();
   if (client)
