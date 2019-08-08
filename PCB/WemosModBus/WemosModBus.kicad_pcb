@@ -62,7 +62,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x01000_fffffffe)
+      (layerselection 0x01000_ffffffff)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -639,6 +639,9 @@
     )
   )
 
+  (gr_text "WeMos+ModBus\nAnders Kvist\nanderskvist@gmail.com" (at 108.585 95.25 270) (layer Eco1.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_line (start 95.885 94.615) (end 95.885 93.345) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 92.71 94.615) (end 95.885 94.615) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 92.71 93.345) (end 92.71 94.615) (layer Edge.Cuts) (width 0.15))
@@ -660,9 +663,6 @@
   (gr_line (start 129.54 139.7) (end 92.075 139.7) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 129.54 79.375) (end 129.54 139.7) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 91.44 79.375) (end 129.54 79.375) (layer Edge.Cuts) (width 0.15))
-  (gr_text "WeMos+ModBus\nAnders Kvist\nanderskvist@gmail.com" (at 108.585 95.25 270) (layer B.Cu)
-    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
-  )
 
   (segment (start 123.825 106.68) (end 116.84 106.68) (width 0.25) (layer B.Cu) (net 9))
   (segment (start 125.73 108.585) (end 123.825 106.68) (width 0.25) (layer B.Cu) (net 9))
