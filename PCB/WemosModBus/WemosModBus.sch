@@ -185,17 +185,9 @@ Wire Wire Line
 	3900 4000 3500 4000
 Wire Wire Line
 	3200 2250 3700 2250
-Wire Wire Line
-	3850 3450 3700 3450
-Wire Wire Line
-	3700 3450 3700 2250
 Connection ~ 3700 2250
 Wire Wire Line
 	3700 2250 3800 2250
-Wire Wire Line
-	3850 3550 3700 3550
-Wire Wire Line
-	3700 3550 3700 3900
 Wire Wire Line
 	3700 3900 3900 3900
 Wire Wire Line
@@ -224,5 +216,13 @@ Wire Wire Line
 Wire Wire Line
 	3800 2950 3500 2950
 Wire Wire Line
-	3500 2950 3500 4000
+	3700 2250 3700 3900
+Wire Wire Line
+	3500 2950 3500 3450
+Wire Wire Line
+	3500 3450 3850 3450
+Wire Wire Line
+	3850 3550 3500 3550
+Wire Wire Line
+	3500 3550 3500 4000
 $EndSCHEMATC
