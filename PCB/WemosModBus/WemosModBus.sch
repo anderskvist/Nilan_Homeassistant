@@ -49,23 +49,19 @@ F 3 "" H 2800 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x04 J2
 U 1 1 5D4A0F6C
-P 2000 2250
-F 0 "J2" H 1920 2467 50  0000 C CNN
-F 1 "Power" H 1920 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 2250 50  0001 C CNN
-F 3 "~" H 2000 2250 50  0001 C CNN
-	1    2000 2250
+P 1850 2350
+F 0 "J2" H 1770 2567 50  0000 C CNN
+F 1 "Power" H 1770 2476 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x04_P5.08mm_Drill1.5mm" H 1850 2350 50  0001 C CNN
+F 3 "~" H 1850 2350 50  0001 C CNN
+	1    1850 2350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 2350 3600 2450
 Connection ~ 3600 2450
-Wire Wire Line
-	2200 2250 2400 2250
-Wire Wire Line
-	2200 2350 2400 2350
 Wire Wire Line
 	2400 2350 2400 2450
 $Comp
@@ -178,8 +174,6 @@ F 3 "~" H 4050 3550 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3600 4200 3900 4200
-Wire Wire Line
 	3900 4100 3400 4100
 Wire Wire Line
 	3900 4000 3500 4000
@@ -225,4 +219,47 @@ Wire Wire Line
 	3850 3550 3500 3550
 Wire Wire Line
 	3500 3550 3500 4000
+Wire Wire Line
+	4700 4400 4700 4100
+Wire Wire Line
+	3600 4200 3900 4200
+Wire Wire Line
+	2300 2350 2300 4400
+Wire Wire Line
+	2300 4400 4700 4400
+Connection ~ 2300 2350
+Wire Wire Line
+	2300 2350 2400 2350
+Wire Wire Line
+	2050 2450 2200 2450
+Wire Wire Line
+	2200 2450 2200 4500
+Wire Wire Line
+	2200 4500 4800 4500
+Wire Wire Line
+	4800 4500 4800 4000
+Wire Wire Line
+	4800 4000 4700 4000
+Wire Wire Line
+	4700 3900 4900 3900
+Wire Wire Line
+	4900 3900 4900 4600
+Wire Wire Line
+	4900 4600 2100 4600
+Wire Wire Line
+	2100 4600 2100 2550
+Wire Wire Line
+	2100 2550 2050 2550
+Wire Wire Line
+	2050 2250 2400 2250
+Wire Wire Line
+	2050 2350 2300 2350
+Wire Wire Line
+	2400 2450 2400 2550
+Wire Wire Line
+	2400 2550 3200 2550
+Wire Wire Line
+	3200 2550 3200 2450
+Connection ~ 2400 2450
+Connection ~ 3200 2450
 $EndSCHEMATC
