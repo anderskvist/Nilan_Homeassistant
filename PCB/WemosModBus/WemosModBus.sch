@@ -262,4 +262,36 @@ Wire Wire Line
 	3200 2550 3200 2450
 Connection ~ 2400 2450
 Connection ~ 3200 2450
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D501188
+P 2850 2650
+F 0 "J?" H 2769 2325 50  0000 C CNN
+F 1 "Software Seriel test #1" H 2769 2416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 2650 50  0001 C CNN
+F 3 "~" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2650 3800 2650
+Wire Wire Line
+	3800 2750 3050 2750
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D5034E9
+P 2850 4000
+F 0 "J?" H 2769 3675 50  0000 C CNN
+F 1 "Software Seriel test #2" H 2769 3766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 4000 50  0001 C CNN
+F 3 "~" H 2850 4000 50  0001 C CNN
+	1    2850 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4000 3500 4000
+Connection ~ 3500 4000
+Wire Wire Line
+	3050 4100 3400 4100
+Connection ~ 3400 4100
 $EndSCHEMATC
