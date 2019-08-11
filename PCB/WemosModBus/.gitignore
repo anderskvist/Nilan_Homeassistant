@@ -3,3 +3,6 @@ output/
 *.gbr
 *.drl
 *.bak
+*-bak
+_autosave-*
+_saved_*
