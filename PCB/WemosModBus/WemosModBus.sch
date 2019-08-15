@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:WemosModBus-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -162,21 +163,6 @@ F 3 "~" H 5300 2850 50  0001 C CNN
 	1    5300 2850
 	0    -1   1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5D4B5EF7
-P 4050 3550
-F 0 "J3" H 3969 3225 50  0000 C CNN
-F 1 "Enable ModBus" H 3969 3316 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 3550 50  0001 C CNN
-F 3 "~" H 4050 3550 50  0001 C CNN
-	1    4050 3550
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3900 4100 3400 4100
-Wire Wire Line
-	3900 4000 3500 4000
 Wire Wire Line
 	3200 2250 3700 2250
 Connection ~ 3700 2250
@@ -204,21 +190,7 @@ Connection ~ 6850 2650
 Wire Wire Line
 	6850 2650 6850 3050
 Wire Wire Line
-	3400 2850 3800 2850
-Wire Wire Line
-	3400 2850 3400 4100
-Wire Wire Line
-	3800 2950 3500 2950
-Wire Wire Line
 	3700 2250 3700 3900
-Wire Wire Line
-	3500 2950 3500 3450
-Wire Wire Line
-	3500 3450 3850 3450
-Wire Wire Line
-	3850 3550 3500 3550
-Wire Wire Line
-	3500 3550 3500 4000
 Wire Wire Line
 	4700 4400 4700 4100
 Wire Wire Line
@@ -262,36 +234,16 @@ Wire Wire Line
 	3200 2550 3200 2450
 Connection ~ 2400 2450
 Connection ~ 3200 2450
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5D501188
-P 2850 2650
-F 0 "J4" H 2769 2325 50  0000 C CNN
-F 1 "Software Seriel test #1" H 2769 2416 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 2650 50  0001 C CNN
-F 3 "~" H 2850 2650 50  0001 C CNN
-	1    2850 2650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 2650 3800 2650
 Wire Wire Line
-	3800 2750 3050 2750
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5D5034E9
-P 2850 4000
-F 0 "J5" H 2769 3675 50  0000 C CNN
-F 1 "Software Seriel test #2" H 2769 3766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 4000 50  0001 C CNN
-F 3 "~" H 2850 4000 50  0001 C CNN
-	1    2850 4000
-	-1   0    0    -1  
-$EndComp
+	3800 2750 3150 2750
 Wire Wire Line
-	3050 4000 3500 4000
-Connection ~ 3500 4000
+	3050 4100 3900 4100
 Wire Wire Line
-	3050 4100 3400 4100
-Connection ~ 3400 4100
+	3150 2750 3150 4000
+Wire Wire Line
+	3150 4000 3900 4000
+Wire Wire Line
+	3050 2650 3050 4100
 $EndSCHEMATC
